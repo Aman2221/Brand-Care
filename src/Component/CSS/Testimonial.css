@@ -1,0 +1,124 @@
+.testimonial {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.testimonialDiv {
+  width: 95%;
+}
+.testimonialDiv > h1 {
+  font-weight: 200;
+  color: #31467b;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.testimonialDivMain {
+  display: grid;
+  grid-template-columns: repeat(5, 19%);
+  column-gap: 15px;
+  justify-content: center;
+  align-items: center;
+  place-content: center;
+  width: 100%;
+}
+.testimonialDivMain > div {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+
+  opacity: 0.7;
+}
+.testimonialDivMain > div:nth-child(3) {
+  height: 350px;
+  background-color: #e4e6cf;
+  opacity: 1;
+}
+.testimonialDivMain > div:nth-child(3) > div > img {
+  top: -80px;
+}
+.testimonialDivMain > div > p {
+  font-size: 12px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #316562;
+}
+.testimonialImg > img {
+  object-fit: contain;
+  position: relative;
+  top: -60px;
+  background-color: #fff;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+}
+
+.testimonialName {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.7);
+  align-items: flex-end;
+}
+.testimonialName > h3 {
+  font-size: 16px;
+  color: #316562;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .testimonialDiv {
+    width: 95%;
+  }
+  .testimonialDiv > h1 {
+    font-size: 1.5em;
+  }
+
+  .testimonialDivMain {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    margin-top: 50px;
+  }
+  .testimonialDivMain > div:nth-child(1),
+  .testimonialDivMain > div:nth-child(5) {
+    display: none;
+  }
+
+  .testimonialName > h3 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonialDivMain > div:nth-child(3) > div > img {
+    top: -100px;
+  }
+  .testimonialDiv > h1 {
+    font-size: 1em;
+  }
+  .testimonialDiv {
+    width: 90%;
+  }
+  .testimonialDivMain {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    row-gap: 30px;
+    margin-top: 50px;
+  }
+
+  .testimonialName > h3 {
+    font-size: 14px;
+  }
+}

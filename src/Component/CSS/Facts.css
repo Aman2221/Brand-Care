@@ -1,0 +1,77 @@
+.facts {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #145151;
+}
+
+.factsDiv {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 25% 70%;
+  column-gap: 25px;
+}
+.factsDivLeft > h1 {
+  color: yellow;
+  font-weight: 200;
+  font-size: 2.5em;
+}
+
+.factsDivRight {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+.factsDivRight > div {
+  border-right: 2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.factsDivRight > div > p {
+  text-align: center;
+  font-weight: 300;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .facts {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .factsDiv {
+    width: 90%;
+    grid-template-columns: 20% 80%;
+    column-gap: 25px;
+  }
+  .factsDivLeft > h1 {
+    font-size: 1.5em;
+  }
+
+  .factsDivRight {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+  }
+  .factsDivRight > div > p {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .factsDiv {
+    grid-template-columns: 100%;
+    row-gap: 25px;
+  }
+  .factsDivLeft > h1 {
+    font-size: 1.5em;
+  }
+
+  .factsDivRight {
+    grid-template-columns: repeat(2, 50%);
+    row-gap: 30px;
+  }
+}

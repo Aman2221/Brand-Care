@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap");
+.healingDiv {
+  padding-top: 50px;
+  background-color: #0f827f;
+  padding-bottom: 50px;
+}
+.healingDivSec {
+  width: 80%;
+}
+.healingDivSec > h1,
+.healingDivSec > h2 {
+  text-align: center;
+  color: #fff;
+}
+.healingDivSec > h1,
+.healingDivSec > h2 {
+  font-weight: 200;
+}
+.healingDivSecMain {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  column-gap: 20px;
+}
+.healingDivSecMain > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.healingDivSecMain > div > h3 {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 1.5em;
+}
+.healingDivSecMain > div > p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.healingDivSecMain > div > button {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 35px;
+  border-radius: 25px;
+  outline: none;
+  border: 2px solid #fff;
+  color: rgba(00, 0, 0, 0.6);
+  background: yellow;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+}
+#healingDivSectionCarouselMobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .healingDivSec > h2 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #healingDivSectionCarouselDesktop {
+    display: none;
+  }
+  #healingDivSectionCarouselMobile {
+    display: flex;
+  }
+  .healingDiv {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .healingDivSec {
+    width: 100%;
+  }
+
+  .healingDivSecMain {
+    margin-top: 30px;
+    grid-template-columns: repeat(1, 100%);
+  }
+  .healingDivSecMain {
+    margin-top: 30px;
+  }
+  .healingDivSecMain > div > img {
+    border-radius: 50%;
+    height: 300px;
+    object-fit: contain;
+  }
+  .healingDivSecMain > div > h3 {
+    font-size: 1.2em;
+  }
+  .healingDivSecMain > div > p {
+    font-size: 14px;
+    width: 80%;
+  }
+  .healingDivSecMain > div > button {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .healingDiv {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .healingDivSec > h1 {
+    font-size: 1.5em;
+  }
+  .healingDivSec > h2 {
+    font-size: 1em;
+  }
+  .healingDivSecMain {
+    margin-top: 30px;
+    width: 90%;
+  }
+  .healingDivSecMain > div > img {
+    border-radius: 50%;
+  }
+  .healingDivSecMain > div > h3 {
+    font-size: 0.8em;
+  }
+  .healingDivSecMain > div > p {
+    font-size: 10px;
+  }
+  .healingDivSecMain > div > button {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 25px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap");
+.navBarDiv {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: 15% 60% 20%;
+  align-items: center;
+  column-gap: 15px;
+}
+.navLogo > h1 {
+  color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.navMiddle > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+.navMiddle > ul > li {
+  font-size: 14px;
+  font-weight: 500;
+}
+#login {
+  background-color: yellow;
+}
+#signup {
+  background: none;
+}
+.navRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navRight > button {
+  font-family: "Roboto", serif !important;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  height: 35px;
+  cursor: pointer;
+}
+
+.navActiveOption {
+  color: #0f827f;
+  border-bottom: 1px solid #0f827f;
+}
+.mobileMenu {
+  display: none;
+}
+@media screen and (max-width: 1021px) {
+  .navBarDiv {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobileMenu {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .mobileMenu > i {
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  }
+
+  .dNone {
+    display: none !important;
+  }
+  .navMiddleList {
+    background-color: #fff;
+    width: 200px;
+    padding-bottom: 15px;
+    position: absolute;
+    left: -200px;
+    top: 65px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 450ms;
+  }
+  .navMiddleListActive {
+    background-color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    position: absolute;
+    width: 200px;
+    left: 0px;
+    top: 65px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 450ms;
+  }
+  .navMiddle > ul > li {
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 45px;
+  }
+  .navRight > button {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+    border-radius: 20px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .navBarDiv {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobileMenu {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .mobileMenu > i {
+    font-size: 1em;
+  }
+  .navMiddleList {
+    width: 150px;
+    padding-bottom: 10px;
+    left: -150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 55px;
+  }
+  .navMiddleListActive {
+    width: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: -100px;
+    top: 55px;
+  }
+  .navMiddle > ul > li {
+    font-size: 12px;
+    margin-top: 25px;
+  }
+  .navRight > button {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10px;
+    border-radius: 14px;
+    height: 25px;
+    font-weight: 700;
+  }
+  .navLogo > h1 {
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap");
+.countOn {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.countOnDiv {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.countOnDivRight {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  color: #586993;
+}
+.countOnDivRight > h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+.countOnDivRight > button {
+  font-family: "Poppins", serif;
+  margin-top: 25px;
+  border-radius: 50px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: 2px solid lightgrey;
+  font-size: 1.2em;
+  color: #586993;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .countOn {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .countOnDivLeft {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .countOnDiv {
+    width: 90%;
+    grid-template-columns: repeat(1, 100%);
+  }
+  .countOnDivRight {
+    padding-left: 00px;
+  }
+  .countOnDivRight > h1 {
+    font-size: 1.5em;
+  }
+  .countOnDivRight > button {
+    border-radius: 50px;
+    font-size: 14px;
+  }
+  .countOnDivLeft > img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .countOnDivLeft > img {
+    width: 100%;
+  }
+  .countOnDiv {
+    width: 90%;
+    grid-template-columns: repeat(1, 100%);
+  }
+  .countOnDivRight {
+    padding-left: 00px;
+  }
+  .countOnDivRight > h1 {
+    font-size: 1.5em;
+  }
+  .countOnDivRight > button {
+    border-radius: 50px;
+    font-size: 12px;
+  }
+}
